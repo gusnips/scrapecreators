@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "generate": "bun scripts/generate.ts && prettier --write src",
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "build": "tsdown",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src scripts",
     "format": "prettier --write .",
@@ -42,7 +42,7 @@
     "api-client",
     "typescript"
   ],
-  "author": "Gustavo Salom\u00e9 (gusnips)",
+  "author": "Gustavo Salomé (gusnips)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -66,10 +66,9 @@
     "@types/bun": "^1.4.2",
     "@types/node": "^26.6.5",
     "eslint": "^10.12.0",
-    "openapi-typescript": "7.13.0",
     "prettier": "^3.9.10",
-    "tsup": "^8.5.1",
-    "typescript": "^5.9.3",
+    "tsdown": "^0.23.7",
+    "typescript": "^7.0.2",
     "typescript-eslint": "^8.71.1"
   }
 }
