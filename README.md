@@ -165,6 +165,8 @@ bun run generate
 
 Do not edit `src/schema.d.ts`, `src/client.ts` or `src/modules/`. The script rewrites them.
 
+The script runs openapi-typescript with TypeScript 5.9.3 in a temporary `npx` install, because openapi-typescript does not work on TypeScript 7 yet. The repo itself uses TypeScript 7, oxlint, oxfmt and tsdown (`bun run lint`, `bun run format:check`, `bun run typecheck`, `bun run build`).
+
 ## License
 
 MIT. Not affiliated with ScrapeCreators.
