@@ -183,9 +183,11 @@ for (const [group, paths] of pathsByGroup) {
   groups.set(group, methods);
 }
 
+// Ask for the types first: if the CLI fails, src/modules is still there.
+const schema = schemaTypes(spec);
 rmSync("src/modules", { recursive: true, force: true });
 mkdirSync("src/modules", { recursive: true });
-writeFileSync("src/schema.d.ts", schemaTypes(spec));
+writeFileSync("src/schema.d.ts", schema);
 for (const [group, methods] of groups) {
   writeFileSync(`src/modules/${group}.ts`, renderModule(group, methods));
 }
