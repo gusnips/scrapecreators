@@ -48,7 +48,14 @@ const CLI_HEADER =
 function schemaTypes(spec: unknown): string {
   const output = execFileSync(
     "npx",
-    ["-y", "-p", "typescript@5.9.3", "-p", "openapi-typescript@7.13.0", "openapi-typescript"],
+    [
+      "-y",
+      "-p",
+      "typescript@5.9.3",
+      "-p",
+      "openapi-typescript@7.13.0",
+      "openapi-typescript",
+    ],
     {
       input: JSON.stringify(spec),
       encoding: "utf8",

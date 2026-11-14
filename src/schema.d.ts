@@ -2034,7 +2034,11 @@ export interface paths {
            * @example last-week
            */
           date_posted?:
-            "last-hour" | "last-day" | "last-week" | "last-month" | "last-year";
+            | "last-hour"
+            | "last-day"
+            | "last-week"
+            | "last-month"
+            | "last-year";
           /**
            * @description Use all to search public posts and reels, or reels to only return reels. Defaults to all.
            * @example all
@@ -3898,7 +3902,11 @@ export interface paths {
            * @example last-week
            */
           date_posted?:
-            "last-hour" | "last-day" | "last-week" | "last-month" | "last-year";
+            | "last-hour"
+            | "last-day"
+            | "last-week"
+            | "last-month"
+            | "last-year";
           /**
            * @description The cursor returned from the previous response. The maximum cursor is 11; cursor 12 or greater returns a 400 response.
            * @example 2
@@ -5766,7 +5774,12 @@ export interface paths {
            * @example ALL
            */
           media_type?:
-            "ALL" | "IMAGE" | "VIDEO" | "MEME" | "IMAGE_AND_MEME" | "NONE";
+            | "ALL"
+            | "IMAGE"
+            | "VIDEO"
+            | "MEME"
+            | "IMAGE_AND_MEME"
+            | "NONE";
           /**
            * @description Impressions start date. Needs to be in YYYY-MM-DD format.
            * @example 2025-01-05
@@ -5851,7 +5864,12 @@ export interface paths {
              * @enum {string}
              */
             media_type?:
-              "ALL" | "IMAGE" | "VIDEO" | "MEME" | "IMAGE_AND_MEME" | "NONE";
+              | "ALL"
+              | "IMAGE"
+              | "VIDEO"
+              | "MEME"
+              | "IMAGE_AND_MEME"
+              | "NONE";
             /** @description Impressions start date. Needs to be in YYYY-MM-DD format. */
             start_date?: string;
             /** @description Impressions end date. Needs to be in YYYY-MM-DD format. */
@@ -5920,7 +5938,12 @@ export interface paths {
            * @example ALL
            */
           media_type?:
-            "ALL" | "IMAGE" | "VIDEO" | "MEME" | "IMAGE_AND_MEME" | "NONE";
+            | "ALL"
+            | "IMAGE"
+            | "VIDEO"
+            | "MEME"
+            | "IMAGE_AND_MEME"
+            | "NONE";
           /**
            * @description Language to filter ads on. Needs to be 2 letter language code, ie EN, ES, FR, etc
            * @example EN
@@ -6000,7 +6023,12 @@ export interface paths {
              * @enum {string}
              */
             media_type?:
-              "ALL" | "IMAGE" | "VIDEO" | "MEME" | "IMAGE_AND_MEME" | "NONE";
+              | "ALL"
+              | "IMAGE"
+              | "VIDEO"
+              | "MEME"
+              | "IMAGE_AND_MEME"
+              | "NONE";
             /** @description Language to filter ads on. Needs to be 2 letter language code, ie EN, ES, FR, etc */
             language?: string;
             /**
@@ -8070,7 +8098,11 @@ export interface paths {
            * @example last-hour
            */
           date_posted?:
-            "last-hour" | "last-day" | "last-week" | "last-month" | "last-year";
+            | "last-hour"
+            | "last-day"
+            | "last-week"
+            | "last-month"
+            | "last-year";
           /**
            * @description Page number to retrieve. Must be between 1 and 11; page 12 or greater returns a 400 response.
            * @example 1
@@ -9936,7 +9968,12 @@ export interface paths {
            * @example instagram
            */
           platform:
-            "instagram" | "tiktok" | "youtube" | "x" | "twitter" | "facebook";
+            | "instagram"
+            | "tiktok"
+            | "youtube"
+            | "x"
+            | "twitter"
+            | "facebook";
           /**
            * @description Creator handle without a profile URL. A leading @ is optional.
            * @example creator
@@ -9992,7 +10029,12 @@ export interface paths {
            * @example instagram
            */
           platform:
-            "instagram" | "tiktok" | "youtube" | "x" | "twitter" | "facebook";
+            | "instagram"
+            | "tiktok"
+            | "youtube"
+            | "x"
+            | "twitter"
+            | "facebook";
           /**
            * @description Creator handle without a profile URL. A leading @ is optional.
            * @example miguelangeles
